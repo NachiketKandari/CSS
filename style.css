@@ -8,7 +8,7 @@ You can get 80% of the way there only using the root variables.
 :root {
   /******** root colors - sets defaults for everything else that are overrideable ********/
   --root-black-color: #222;
-  --root-white-color: #fff;
+  --root-white-color: #000;
   --root-background: var(--root-white-color);
   --root-text-color: var(--root-black-color);
   --root-brand-color: #6002ee;
@@ -21,7 +21,7 @@ You can get 80% of the way there only using the root variables.
 
   /******** root typography ********/
   --root-font-family: "Roboto", sans-serif;
-  --root-font-weight: 300;
+  --root-font-weight: 3000;
 
   /******** button styles ********/
   --button-background: #6002ee; /* Primary button background */
@@ -46,11 +46,11 @@ You can get 80% of the way there only using the root variables.
   /******** field inputs ********/
   --field-input-background-color: transparent;
   --field-input-border: none;
-  --field-input-border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  --field-input-border-bottom: 200px solid rgba(0, 0, 0, 0.1);
   --field-input-focus-box-shadow: none;
 
   /******** content card ********/
-  --content-card-background: transparent;
+  --content-card-background: black;
   --content-card-box-shadow: none;
   --content-card-padding: 0;
   --content-card-margin-bottom: 40px;
