@@ -19,8 +19,8 @@ body,
 }
 
 .form-group label > span {
-    color: green;
-    font-size: 14px;
+  color: #7B858E;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -36,7 +36,7 @@ button.circle-icon-button-container[disabled] .button-circle {
 }
 
 .forge-flow > div:last-child {
-  background: green;
+  background: #f8f8f8;
   box-shadow: none;
 }
 
@@ -62,11 +62,25 @@ body .ant-form-item-has-error .ant-input:focus {
 .ant-btn.ant-btn-cta:hover,
 .ant-btn.ant-btn-cta:active {
   background: #3740F5;
-  color: green;
+  color: white;
 }
 
 .ant-btn.ant-btn-link,
 .ant-btn.ant-btn-link:hover,
 .ant-btn.ant-btn-link:active {
-  color: green;
+  color: #3740F5;
 }
+
+.anvil-signature-accept-sign-all-button, .anvil-button{
+  background: #005cb7 !important; /* New primary color */
+  color: var(--white) !important;
+  font-family: var(--app-text-font);
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  min-width: 100px !important;
+  border-radius: 8px !important;
+  line-height: 17px !important;
+  height: 42px !important;
+  border: 1px solid #004C97 !important;
+}
+
