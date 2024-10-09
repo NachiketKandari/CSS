@@ -71,7 +71,19 @@ body .ant-form-item-has-error .ant-input:focus {
   color: #3740F5;
 }
 
-.anvil-signature-accept-sign-all-button, .anvil-button{
+.anvil-signature-accept-sign-all-button{
+  background: #005cb7 !important; /* New primary color */
+  color: var(--white) !important;
+  font-family: var(--app-text-font);
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  min-width: 100px !important;
+  border-radius: 8px !important;
+  line-height: 17px !important;
+  height: 42px !important;
+  border: 1px solid #004C97 !important;}
+
+.anvil-button{
   background: #005cb7 !important; /* New primary color */
   color: var(--white) !important;
   font-family: var(--app-text-font);
