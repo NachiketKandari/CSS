@@ -1,93 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* 
-This is an example theme to be used in Anvil.
-You can get 80% of the way there only using the root variables.
- */
-
-:root {
-  /******** root colors - sets defaults for everything else that are overrideable ********/
-  --root-black-color: #222;
-  --root-white-color: #000;
-  --root-background: var(--root-white-color);
-  --root-text-color: var(--root-black-color);
-  --root-brand-color: #6002ee;
-  --root-brand-color-10: #b794f6;
-  --root-brand-color-20: #efe5fd;
-  --root-green-color: #2ed27c;
-  --root-error-color: #e55252;
-  --root-link-color: #0185a2;
-  --root-link-hover-color: #00a298;
-
-  /******** root typography ********/
-  --root-font-family: "Roboto", sans-serif;
-  --root-font-weight: 3000;
-
-  /******** button styles ********/
-  --button-background: #6002ee; /* Primary button background */
-  --button-color: #fff; /* Primary button text color */
-  --button-hover-background: #5a00d1; /* Primary button hover background */
-  --button-border-radius: 8px; /* Button border radius */
-
-  --button-secondary-background: #b794f6; /* Secondary button background */
-  --button-secondary-color: #fff; /* Secondary button text color */
-  --button-secondary-hover-background: #a67be5; /* Secondary button hover background */
-  --button-secondary-border-radius: 8px;
-
-  --button-disabled-background: #f5f5f5; /* Disabled button background */
-  --button-disabled-color: #d9d9d9; /* Disabled button text color */
-
-  /******** checkbox styles ********/
-  --checkbox-checked-background: #6002ee; /* Checkbox checked background */
-  --checkbox-checked-border-color: #6002ee; /* Checkbox checked border */
-  --checkbox-size: 200px; /* Checkbox size */
-  --checkbox-border-radius: 4px; /* Checkbox border radius */
-
-  /******** field inputs ********/
-  --field-input-background-color: transparent;
-  --field-input-border: none;
-  --field-input-border-bottom: 200px solid rgba(0, 0, 0, 0.1);
-  --field-input-focus-box-shadow: none;
-
-  /******** content card ********/
-  --content-card-background: black;
-  --content-card-box-shadow: none;
-  --content-card-padding: 0;
-  --content-card-margin-bottom: 40px;
-  --content-title-font-size: 20px;
-  --content-title-font-weight: 500;
+body,
+.forge-flow {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
 }
 
-.anvil-markdown strong {
-  font-weight: 500;
-  font-style: normal;
+#page-title {
+  margin-bottom: 30px;
 }
 
-.anvil-markdown ul {
-  list-style-type: square;
+#page-title::after {
+  display: none;
 }
 
-.anvil-markdown ol {
-  list-style-type: decimal;
+.form-group .ant-form-item-label {
+  padding-bottom: 8px;
 }
 
-.anvil-field-content-container {
-  display: flex;
-  flex-direction: column;
+.form-group label > span {
+    color: green;
+    font-size: 14px;
+  font-weight: 600;
 }
 
-.ant-form-item-has-error
-  .anvil-field-content-container
-  .anvil-field-help-label {
-  order: 2;
-  position: relative;
-  margin-top: 6px;
-  text-align: left;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.anvil-list-input-item .anvil-field-label {
+.form-group input {
+  border: 1px solid #DCDDE2;
+  border-radius: 5px;
   font-size: 14px;
-  font-style: italic;
+  padding: 10px 15px;
+}
+
+button.circle-icon-button-container[disabled] .button-circle {
+  background: transparent !important;
+}
+
+.forge-flow > div:last-child {
+  background: green;
+  box-shadow: none;
+}
+
+body .ant-input:hover,
+body .ant-input:focus,
+body .ant-input:active,
+body .ant-form-item-has-error .ant-input:hover,
+body .ant-form-item-has-error .ant-input:active,
+body .ant-form-item-has-error .ant-input:focus {
+  border-right-width: 1px !important;
+}
+
+.form-group input:focus {
+  border: 1px solid #4a4dcd;
+  background-color: #F5F7FE;
+}
+
+.ant-btn {
+  border-radius: 5px;
+}
+
+.ant-btn.ant-btn-cta,
+.ant-btn.ant-btn-cta:hover,
+.ant-btn.ant-btn-cta:active {
+  background: #3740F5;
+  color: green;
+}
+
+.ant-btn.ant-btn-link,
+.ant-btn.ant-btn-link:hover,
+.ant-btn.ant-btn-link:active {
+  color: green;
 }
